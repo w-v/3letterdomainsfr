@@ -1,0 +1,10 @@
+#!/bin/bash
+
+SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
+
+#Getting the database : selecting the first .csv file
+l=( "${SCRIPTPATH}"/*.csv )
+
+#echo $l; exit;
+
+comm -23 <(bash "${SCRIPTPATH}"/gen.sh | sed '/^[-]\{0,2\}[a-z0-9]\{0,2\}[-]\{0,2\}\.fr$/d'|sort) <(awk -F ';' '{print $1}' ${l[0]} |grep '^[a-z0-9-]\{3\}\.fr$' | sort) > ${SCRIPTPATH}/3letterdomainsfr.txt
