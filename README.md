@@ -1,6 +1,7 @@
 # 3letterdomainsfr
-to get a list of 3 letter available domains in .fr
-related post with the list as of Dec 17 is on [my blog](https://sites.google.com/site/0x00007f5dee71f2f0/)
+To get a list of 3 letter available domains in .fr
+
+A related post with the list as of Dec 17 is on [my blog](https://sites.google.com/site/0x00007f5dee71f2f0/)
 
 ## Getting Started
 1. Clone this repository
